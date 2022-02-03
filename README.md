@@ -48,12 +48,11 @@ Looking back is the most importtant feature of this app. Looking back weill be d
   - taskIds: String[]
   - tag: String[]
   - date: Date
+  - ReviewId: String | null
 - Task
   - id: String
   - title: String
-  - comment: String
-  - reviewId: String | Null
-  - makeReview()
+  - text: String | null
 - Review
   - id: String
   - labelOfAchivement: Number
@@ -61,9 +60,8 @@ Looking back is the most importtant feature of this app. Looking back weill be d
 - User
   - id: String
   - name: String
-  - profImg: String
 
 ユーザーが今日の目標を設定すると同時にDiaryが生成され, 当日の目標であるTaskを1つ以上設定する. 
 ユーザーはその日の終わりに当日のTaskに対してReviewを生成する. 
-もしかしたら、達成度はTaskよりDiaryに置いて, 達成度とレビューを記入する形がいいのかもしれない. 
 
+UserにglobalTaskみたいな通年使える目標があったり, profileとか, profImgとかあってもいいかも.
